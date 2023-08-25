@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="293.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.javafx.CompanyCreatingController">
+   <children>
+      <AnchorPane layoutY="110.0" prefHeight="288.0" prefWidth="347.0">
+         <children>
+            <MenuBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="601.0" style="-fx-background-color: #cf2c23;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MenuBar>
+            <AnchorPane layoutX="187.0" layoutY="41.0" prefHeight="148.0" prefWidth="196.0">
+               <children>
+                  <TextField fx:id="sizeTextField" layoutX="70.0" layoutY="33.0" promptText="Max. size оf order" />
+                  <Label layoutX="33.0" layoutY="37.0" text="Size" />
+                  <TextField fx:id="weightTextField" layoutX="70.0" layoutY="69.0" promptText="Max. weigth оf order" />
+                  <Label layoutX="27.0" layoutY="73.0" text="Weigth" />
+                  <TextField fx:id="priceTextField" layoutX="70.0" layoutY="102.0" promptText="Max. price оf order" />
+                  <Label layoutX="30.0" layoutY="106.0" text="Price" />
+                  <Label layoutX="92.0" layoutY="6.0" text="Limits" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="24.0" layoutY="50.0" prefHeight="131.0" prefWidth="157.0">
+               <children>
+                  <TextField fx:id="nameTextField" layoutX="14.0" layoutY="32.0" promptText="For example DHL" />
+                  <Label layoutX="40.0" layoutY="14.0" text="Company name" />
+                  <TextField fx:id="periodTextField" layoutX="14.0" layoutY="92.0" prefHeight="17.0" prefWidth="149.0" promptText="mm/hh/dd" />
+                  <Label layoutX="48.0" layoutY="75.0" text="Delivery period" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="222.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#addCompanyClickButton" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #cf2c23;" text="Add new company" />
+            <AnchorPane layoutX="394.0" layoutY="41.0" prefHeight="148.0" prefWidth="205.0">
+               <children>
+                  <TextField fx:id="sPackageTextField" layoutX="46.0" layoutY="35.0" promptText="Small package" />
+                  <Label layoutX="29.0" layoutY="39.0" text="S" />
+                  <TextField fx:id="mPackageTextField" layoutX="46.0" layoutY="71.0" promptText="Medium package" />
+                  <Label layoutX="27.0" layoutY="73.0" text="M" />
+                  <TextField fx:id="lPackageTextField" layoutX="46.0" layoutY="104.0" promptText="Large package" />
+                  <Label layoutX="30.0" layoutY="106.0" text="L" />
+                  <Label layoutX="92.0" layoutY="6.0" text="Price for" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="105.0" prefWidth="601.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="334.0" layoutX="134.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/nowa_poshta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

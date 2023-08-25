@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#handleSceneClicked" prefHeight="293.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.javafx.ClientSetAddressController">
+   <children>
+      <AnchorPane layoutY="110.0" prefHeight="288.0" prefWidth="347.0">
+         <children>
+            <MenuBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="601.0" style="-fx-background-color: #cf2c23;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MenuBar>
+            <AnchorPane layoutX="314.0" layoutY="70.0" prefHeight="148.0" prefWidth="228.0">
+               <children>
+                  <TextField fx:id="streetTextField" layoutX="70.0" layoutY="33.0" promptText="For example: Cockspur" />
+                  <Label layoutX="21.0" layoutY="37.0" text="Street" />
+                  <TextField fx:id="streetNumberTextField" layoutX="70.0" layoutY="69.0" promptText="For example: 5" />
+                  <Label layoutX="1.0" layoutY="73.0" text="St. number" />
+                  <TextField fx:id="roomTextField" layoutX="70.0" layoutY="102.0" promptText="For example: 184" />
+                  <Label layoutX="14.0" layoutY="106.0" text="Room" />
+                  <Label layoutX="92.0" layoutY="6.0" text="Street" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="226.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#setAddressButtonClick" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #cf2c23;" text="Set a new address" textFill="WHITE" />
+            <AnchorPane layoutX="53.0" layoutY="73.0" prefHeight="164.0" prefWidth="219.0">
+               <children>
+                  <TextField fx:id="cityTextField" layoutX="70.0" layoutY="36.0" promptText="For example: New York" />
+                  <Label layoutX="33.0" layoutY="40.0" text="City" />
+                  <TextField fx:id="zipCodeTextField" layoutX="70.0" layoutY="72.0" promptText="For example: 10314" />
+                  <Label layoutX="20.0" layoutY="76.0" text="Zip code" />
+                  <Label layoutX="89.0" layoutY="6.0" text="City" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="190.0" layoutY="25.0" prefHeight="35.0" prefWidth="238.0" text="Type in a new address">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="105.0" prefWidth="601.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="334.0" layoutX="134.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/nowa_poshta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="titleLabel" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="32.0" text="waiting" textFill="#ababab" />
+   </children>
+</AnchorPane>

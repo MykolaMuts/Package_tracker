@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="293.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.javafx.DeliveryController">
+   <children>
+      <AnchorPane layoutY="110.0" prefHeight="288.0" prefWidth="347.0">
+         <children>
+            <MenuBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="601.0" style="-fx-background-color: #cf2c23;">
+              <menus>
+                  <Menu mnemonicParsing="false" text="For company owners">
+                     <items>
+                    <MenuItem mnemonicParsing="false" onAction="#addCompanyActionBar" text="Add your company" />
+                     </items></Menu>
+                <Menu mnemonicParsing="false" text="Account">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrationActionBar" text="Registration" />
+                        <MenuItem mnemonicParsing="false" onAction="#loginActionBar" text="Login" />
+                     </items></Menu>
+              </menus>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MenuBar>
+            <TextField fx:id="searchTextField" layoutX="138.0" layoutY="80.0" prefHeight="25.0" prefWidth="236.0" promptText="Enter tracking number" />
+            <Button layoutX="380.0" layoutY="80.0" mnemonicParsing="false" onMouseClicked="#searchButtonClick" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #cf2c23;" text="Search" textFill="WHITE" />
+            <Label layoutX="209.0" layoutY="32.0" text="Package Tracking">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="trackTable" layoutX="119.0" layoutY="125.0" prefHeight="59.0" prefWidth="363.0">
+               <columns>
+                  <TableColumn fx:id="arrivedAtColumn" prefWidth="95.0" text="Arrived at" />
+                  <TableColumn fx:id="nameColumn" prefWidth="107.0" text="Name" />
+                  <TableColumn fx:id="priceColumn" prefWidth="48.0" text="Price" />
+                  <TableColumn fx:id="weightColumn" prefWidth="111.0" text="Weight" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="105.0" prefWidth="601.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="334.0" layoutX="134.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/nowa_poshta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
